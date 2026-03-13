@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>djbet • Melhor Plataforma de Apostas e Cassino Online do Brasil</title>
+    <!-- Font Awesome 6 (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0b0e1a 0%, #141a2c 100%);
+            color: #f0f3fa;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* header / navegação */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-bottom: 1px solid #2f3b70;
+        }
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffe45c, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            background: none;
+            -webkit-text-fill-color: #fff;
+            background: linear-gradient(135deg, #fff, #c0d0ff);
+            -webkit-background-clip: text;
+            font-size: 1.2rem;
+            margin-left: 8px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #ffc107;
+            color: #ffc107;
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-outline:hover {
+            background: #ffc10720;
+        }
+        .btn-solid {
+            background: #ffc107;
+            border: none;
+            color: #0b0e1a;
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid #ffe28c;
+        }
+        .btn-solid:hover {
+            background: #ffd966;
+            transform: scale(1.02);
+        }
+
+        /* hero */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 0 30px;
+        }
+        .hero-content {
+            flex: 1 1 450px;
+        }
+        .hero-content h1 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #fff, #b5cbff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-content p {
+            font-size: 1.3rem;
+            color: #b8c4ff;
+            margin: 25px 0 30px;
+        }
+        .hero-badge {
+            background: #202842;
+            border-radius: 60px;
+            padding: 10px 25px;
+            display: inline-block;
+            font-weight: 600;
+            border-left: 5px solid gold;
+            margin-bottom: 15px;
+        }
+        .hero-image {
+            flex: 1 1 400px;
+            background: radial-gradient(circle at 70% 30%, #2d3f7a, #0a0f20);
+            border-radius: 60px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #4e5b99;
+            min-height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-image i {
+            font-size: 7rem;
+            color: #ffc107;
+            filter: drop-shadow(0 0 25px #f0b323);
+        }
+
+        /* seção recursos / ícones */
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 60px 0 20px;
+            background: linear-gradient(135deg, #fff, #c9d5ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-sub {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #aeb9f2;
+            margin-bottom: 50px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: #181f36;
+            border-radius: 40px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 1px solid #38406e;
+            transition: 0.2s;
+        }
+        .feature-card i {
+            font-size: 3rem;
+            color: #ffc107;
+            background: #262e50;
+            padding: 20px;
+            border-radius: 60px;
+            margin-bottom: 25px;
+        }
+        .feature-card h3 {
+            font-size: 1.9rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .feature-card p {
+            color: #bdc3ff;
+        }
+
+        .stats-panel {
+            background: #0d1228;
+            border-radius: 70px;
+            padding: 40px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 60px 0;
+            border: 1px solid #ffc10740;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffc107;
+        }
+        .stat-label {
+            font-size: 1.2rem;
+            color: #b1bdff;
+        }
+
+        .about-text {
+            background: #121a30;
+            border-radius: 60px;
+            padding: 40px;
+            margin: 50px 0;
+            font-size: 1.2rem;
+            border-left: 8px solid #ffc107;
+            color: #d2dbff;
+        }
+
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .testimonial {
+            background: #1a2140;
+            border-radius: 40px;
+            padding: 30px;
+            flex: 1 1 280px;
+            border-bottom: 5px solid #ffc107;
+        }
+        .testimonial i {
+            color: #ffc107;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin: 15px 0;
+            color: #d3dcff;
+        }
+        .testimonial h4 {
+            color: white;
+        }
+
+        .price-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        .price-card {
+            background: #0e1429;
+            border-radius: 50px;
+            padding: 35px 25px;
+            flex: 1 1 280px;
+            border: 2px solid #2e3a62;
+            text-align: center;
+        }
+        .price-card.premium {
+            border-color: #ffc107;
+            transform: scale(1.02);
+            background: #131c38;
+            box-shadow: 0 0 40px #ffc10730;
+        }
+        .price-card h3 {
+            font-size: 2.2rem;
+            color: white;
+        }
+        .price-card .bonus {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffc107;
+            margin: 15px 0;
+        }
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            padding: 0 10px;
+        }
+        .price-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #262f53;
+        }
+        .price-card li i {
+            color: #0dcaf0;
+            margin-right: 12px;
+        }
+        .btn-buy {
+            background: #ffc107;
+            color: #0b0e1a;
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding: 12px;
+            border-radius: 60px;
+            display: block;
+            text-decoration: none;
+            margin-top: 25px;
+            border: 2px solid white;
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            justify-content: center;
+            background: #0e1424;
+            border-radius: 80px;
+            padding: 40px 20px;
+            margin: 40px 0;
+        }
+        .payment-methods span {
+            font-size: 1.8rem;
+            background: #1f274a;
+            padding: 12px 25px;
+            border-radius: 60px;
+            border: 1px solid #6470ac;
+        }
+        .payment-methods i {
+            margin-right: 8px;
+            color: gold;
+        }
+
+        .app-showcase {
+            background: linear-gradient(145deg, #1b2340, #0d1225);
+            border-radius: 80px;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 50px 0;
+        }
+        .app-text {
+            flex: 2;
+        }
+        .app-text h2 {
+            font-size: 2.5rem;
+        }
+        .app-text i {
+            color: #ffc107;
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        .faq {
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+        .faq-item {
+            background: #121a2f;
+            border-radius: 50px;
+            padding: 20px 30px;
+            margin-bottom: 15px;
+            border-left: 8px solid #ffc107;
+        }
+        .faq-item h4 {
+            font-size: 1.6rem;
+            color: white;
+        }
+        .faq-item p {
+            color: #c2cbff;
+            margin-top: 8px;
+        }
+
+        .footer {
+            background: #070b18;
+            padding: 50px 0 30px;
+            border-top: 2px solid #2c3560;
+            text-align: center;
+            color: #9aa3d3;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .footer-links a {
+            color: #ffc107;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer small {
+            display: block;
+            margin-top: 40px;
+            color: #5f6a9b;
+        }
+
+        @media (max-width: 800px) {
+            .hero-content h1 { font-size: 2.6rem; }
+            .section-title { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- cabeçalho -->
+        <nav class="navbar">
+            <div class="logo">djbet <span>• oficial</span></div>
+            <div class="nav-buttons">
+                <button class="btn-outline"><i class="fas fa-user-plus"></i> Registrar</button>
+                <button class="btn-solid"><i class="fas fa-sign-in-alt"></i> Entrar</button>
+            </div>
+        </nav>
+
+        <!-- hero principal -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-crown"></i> Plataforma #1 do Brasil</div>
+                <h1>djbet – Apostas Esportivas e Cassino de Alta Performance</h1>
+                <p>Experimente a emoção das apostas esportivas, jogos ao vivo, slots incríveis e muito mais na plataforma mais confiável para brasileiros.</p>
+                <button class="btn-solid" style="font-size:1.6rem; padding:15px 45px;"><i class="fas fa-gift"></i> Cadastre-se e Ganhe Bônus</button>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-dice-d6"></i>
+            </div>
+        </div>
+
+        <!-- Por que escolher -->
+        <h2 class="section-title">🔥 Por Que Escolher djbet?</h2>
+        <p class="section-sub">Descubra tudo o que torna o djbet a escolha número um dos apostadores brasileiros</p>
+
+        <div class="features-grid">
+            <div class="feature-card"><i class="fas fa-chart-line"></i><h3>Odds Competitivas</h3><p>As melhores cotações em futebol, basquete, tênis e muito mais.</p></div>
+            <div class="feature-card"><i class="fas fa-shield-alt"></i><h3>Segurança Garantida</h3><p>Criptografia SSL de 256 bits, proteção total dos seus dados.</p></div>
+            <div class="feature-card"><i class="fas fa-bolt"></i><h3>Saques Rápidos</h3><p>Receba via PIX em minutos ou transferência em até 1 dia.</p></div>
+            <div class="feature-card"><i class="fas fa-gift"></i><h3>Bônus Generosos</h3><p>Bônus de boas‑vindas, cashback e recompensas para fiéis.</p></div>
+            <div class="feature-card"><i class="fas fa-mobile-alt"></i><h3>App Mobile</h3><p>Aplicativo nativo para iOS e Android, aposte de qualquer lugar.</p></div>
+            <div class="feature-card"><i class="fas fa-headset"></i><h3>Suporte 24/7</h3><p>Atendimento em português sempre disponível.</p></div>
+        </div>
+
+        <!-- texto institucional -->
+        <div class="about-text">
+            <i class="fas fa-quote-left" style="font-size:3rem; color:gold;"></i>
+            <p style="font-size:1.3rem;">Bem-vindo ao djbet, a plataforma de apostas esportivas e cassino online que está revolucionando o mercado brasileiro. Oferecemos uma interface intuitiva em português, suporte local e métodos de pagamento que você já conhece. São mais de 30 modalidades esportivas, milhares de eventos e um cassino com +2000 títulos dos melhores provedores (Pragmatic Play, Evolution, NetEnt). Tudo com segurança e transparência.</p>
+        </div>
+
+        <!-- estatísticas / selos -->
+        <div class="stats-panel">
+            <div class="stat-item"><span class="stat-number">+30</span> <div class="stat-label">esportes</div></div>
+            <div class="stat-item"><span class="stat-number">+2k</span> <div class="stat-label">jogos de cassino</div></div>
+            <div class="stat-item"><span class="stat-number">#1</span> <div class="stat-label">PIX saque rápido</div></div>
+            <div class="stat-item"><span class="stat-number">24/7</span> <div class="stat-label">suporte</div></div>
+        </div>
+
+        <!-- avaliações -->
+        <h2 class="section-title">💬 O Que Nossos Jogadores Dizem</h2>
+        <div class="testimonials">
+            <div class="testimonial"><i class="fas fa-star"></i><p>"Comecei há três meses e já tive vários saques. Odds realmente melhores. Atendimento excelente."</p><h4>— Carlos Silva, SP</h4></div>
+            <div class="testimonial"><i class="fas fa-star"></i><p>"Adoro os jogos ao vivo! Dealers simpáticos. Ganhei na roleta e recebi via PIX em menos de 10 min."</p><h4>— Mariana Costa, RJ</h4></div>
+            <div class="testimonial"><i class="fas fa-star"></i><p>"App mobile fantástico! Aposto de qualquer lugar, já usei no estádio. Plataforma top."</p><h4>— João Santos, BH</h4></div>
+        </div>
+
+        <!-- planos de bônus -->
+        <h2 class="section-title">🎁 Planos de Bônus e Promoções</h2>
+        <div class="price-cards">
+            <div class="price-card">
+                <h3>Iniciante</h3>
+                <div class="bonus">100% até R$500</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Bônus de boas-vindas</li>
+                    <li><i class="fas fa-check"></i> 50 rodadas grátis</li>
+                    <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                    <li><i class="fas fa-check"></i> Cashback 5% semanal</li>
+                </ul>
+                <a href="#" class="btn-buy">Escolher</a>
+            </div>
+            <div class="price-card premium">
+                <h3>Avançado</h3>
+                <div class="bonus">150% até R$1.500</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Bônus maior</li>
+                    <li><i class="fas fa-check"></i> 100 rodadas grátis</li>
+                    <li><i class="fas fa-check"></i> Gerente de conta VIP</li>
+                    <li><i class="fas fa-check"></i> Cashback 10% semanal</li>
+                </ul>
+                <a href="#" class="btn-buy">Escolher</a>
+            </div>
+            <div class="price-card">
+                <h3>Premium</h3>
+                <div class="bonus">200% até R$5.000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Máximo bônus</li>
+                    <li><i class="fas fa-check"></i> 200 rodadas grátis</li>
+                    <li><i class="fas fa-check"></i> Tratamento VIP exclusivo</li>
+                    <li><i class="fas fa-check"></i> Cashback 15% semanal</li>
+                </ul>
+                <a href="#" class="btn-buy">Escolher</a>
+            </div>
+        </div>
+
+        <!-- métodos de pagamento -->
+        <h2 class="section-title">💳 Pagamentos Convenientes</h2>
+        <div class="payment-methods">
+            <span><i class="fab fa-pix"></i> PIX</span>
+            <span><i class="fas fa-wallet"></i> PicPay</span>
+            <span><i class="fab fa-bitcoin"></i> BTC</span>
+            <span><i class="fas fa-credit-card"></i> Visa/Master</span>
+            <span><i class="fas fa-university"></i> TED</span>
+        </div>
+
+        <!-- app mobile -->
+        <div class="app-showcase">
+            <div class="app-text">
+                <h2><i class="fas fa-mobile"></i> Tecnologia Mobile de Ponta</h2>
+                <p style="font-size:1.3rem;">Aplicativo nativo para iOS e Android com notificações push, transmissões ao vivo e funcionalidades exclusivas. Versão web mobile também disponível.</p>
+                <div style="margin-top:25px;">
+                    <i class="fab fa-apple"></i> iPhone
+                    <i class="fab fa-android" style="margin-left:25px;"></i> Android
+                </div>
+            </div>
+        </div>
+
+        <!-- política de privacidade resumo -->
+        <div style="background:#0d1328; border-radius:60px; padding:35px; margin:40px 0;">
+            <h3><i class="fas fa-lock" style="color:gold;"></i> Privacidade e Proteção de Dados (LGPD)</h3>
+            <p>Coletamos apenas dados necessários (nome, CPF, e-mail) para verificação e prevenção a fraudes. Todos os dados são criptografados em servidores seguros. Nunca compartilhamos informações com terceiros sem seu consentimento. Menores de 18 anos não podem jogar. Você pode solicitar exclusão dos dados a qualquer momento.</p>
+        </div>
+
+        <!-- CTA final -->
+        <div style="text-align:center; background:#1b2448; border-radius:90px; padding:50px; margin:40px 0;">
+            <h2 style="font-size:2.8rem;">🌟 Pronto Para Começar?</h2>
+            <p style="font-size:1.5rem;">Junte-se a milhares de brasileiros que já estão lucrando com a djbet.</p>
+            <button class="btn-solid" style="font-size:2rem; margin-top:25px; padding:15px 50px;"><i class="fas fa-user-check"></i> Criar Conta Grátis Agora</button>
+        </div>
+
+        <!-- FAQ -->
+        <h2 class="section-title">❓ Perguntas Frequentes</h2>
+        <div class="faq">
+            <div class="faq-item"><h4>Como faço para criar uma conta?</h4><p>Clique em "Registrar", preencha seus dados (nome, CPF, e-mail) e confirme que tem +18 anos. Após confirmação, já pode depositar.</p></div>
+            <div class="faq-item"><h4>Quanto tempo leva para receber meus ganhos?</h4><p>Saques via PIX são em minutos; transferência pode levar 1-3 dias úteis. A verificação de segurança leva até 24h.</p></div>
+            <div class="faq-item"><h4>O djbet oferece bônus para novos jogadores?</h4><p>Sim! Bônus de boas-vindas de até 200% (R$5.000) + rodadas grátis. Consulte promoções.</p></div>
+            <div class="faq-item"><h4>É seguro jogar no djbet?</h4><p>Totalmente. Criptografia SSL 256 bits, licenciado e auditado. Ferramentas de jogo responsável disponíveis.</p></div>
+        </div>
+    </div>
+
+    <!-- rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo" style="font-size:2rem;">djbet</div>
+            <div class="footer-links">
+                <a href="#">Termos e Condições</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Jogo Responsável</a>
+                <a href="#">Apostas</a>
+                <a href="#">Cassino</a>
+            </div>
+            <p><i class="fas fa-envelope"></i> suporte@djbet.br • <i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+            <small>Todos os direitos reservados © 2025 djbet. Menores de 18 anos proibidos. Este site é uma reprodução independente para fins de demonstração.</small>
+        </div>
+    </footer>
+</body>
+</html>
